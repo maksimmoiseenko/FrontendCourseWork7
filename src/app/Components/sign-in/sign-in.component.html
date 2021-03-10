@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <title>Sign in!</title>
+</head>
+<div style="background-color: #f8f9fa;display: flex;
+  align-items: center;
+  justify-content: center">
+  <form class="form-signin" (ngSubmit)="onSubmit()"
+        style="margin:0; width:300px">
+    <h1 class="h3 mb-3 font-weight-normal">Войдите, пожалуйста</h1>
+    <label for="Login" class="sr-only">Login</label>
+    <input [(ngModel)]="formLogin.login" id="Login"  name="Login" class="form-control" placeholder="login" required="" autofocus="">
+    <label for="Password" class="sr-only">Password</label>
+    <input [(ngModel)]="formLogin.password" id="Password" type="password" name="password" class="form-control" placeholder="password" required="">
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Войти</button>
+    <p class="mt-5 mb-3 text-muted">© 2021</p>
+  </form>
+</div>
+</html>

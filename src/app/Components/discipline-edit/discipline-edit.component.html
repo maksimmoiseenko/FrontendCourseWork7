@@ -1,0 +1,12 @@
+<div style="background-color: #f8f9fa;display: flex;
+  align-items: center;
+  justify-content: center">
+  <form class="form-signin" (ngSubmit)="save()"
+        style="margin:0; width:300px">
+    <h1 class="h3 mb-3 font-weight-normal">измените дисциплину</h1>
+    <label for="Name" class="sr-only">Name</label>
+    <input [(ngModel)]="discipline.name" id="Name"  name="name" class="form-control" [value]="discipline.name" placeholder="name" required="" autofocus="">
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Сохранить</button>
+    <p class="mt-5 mb-3 text-muted">© 2021</p>
+  </form>
+</div>
